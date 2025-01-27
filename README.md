@@ -53,7 +53,7 @@ This project focuses on implementing software architecture and design principles
 
 #### **Feedback and Conflict Resolution**
 - Provide constructive, actionable feedback.  
-- Escalate unresolved conflicts to **Mahboubah (Scrum Master)** or **[Your Name] (Product Manager)**.  
+- Escalate unresolved conflicts to **Mahboubah (Scrum Master)** or **Evan (Product Manager)**.  
 
 ---
 
