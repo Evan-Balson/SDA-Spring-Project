@@ -42,7 +42,7 @@ This project focuses on implementing software architecture and design principles
 
 #### **Meeting Etiquette**
 - Be punctual and prepared for meetings.  
-- **If you’re late, treats for the team are on you!**  
+- **If you’re late, treats for the team are on you! -> chocolates for Mahboubah please!**  
 - **Absences:**  
   - Missing **2 meetings** will result in a warning.  
   - Missing **3 meetings** will be escalated and reported.  
