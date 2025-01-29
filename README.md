@@ -6,7 +6,7 @@ This repository is the collaborative hub for our **Software Architecture and Des
 ## **Submitted By:**
 - **Team Members:** Maahia, Hala  
 - **Product Manager:** Evan  
-- **Scrum Master:** Mahboubah  
+- **Scrum Master:** Mahbouba
 - **Time spent:** Ongoing  
 
 ---
