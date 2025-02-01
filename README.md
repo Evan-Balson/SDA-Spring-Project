@@ -6,7 +6,7 @@ This repository is the collaborative hub for our **Software Architecture and Des
 ## **Submitted By:**
 - **Team Members:** Maahia, Hala  
 - **Product Manager:** Evan  
-- **Scrum Master:** Mahboubah  
+- **Scrum Master:** Mahbouba
 - **Time spent:** Ongoing  
 
 ---
@@ -19,7 +19,7 @@ This repository is the collaborative hub for our **Software Architecture and Des
 This project focuses on implementing software architecture and design principles through teamwork, effective communication, and agile methodologies. The repository contains:
 
 - A detailed **Code of Conduct** to guide the team in maintaining accountability and professionalism.  
-- Agile workflows managed by the **Scrum Master (Mahboubah)**.  
+- Agile workflows managed by the **Scrum Master (Mahbouba)**.  
 - Regular documentation updates for transparency and progress tracking.  
 
 ---
@@ -42,7 +42,7 @@ This project focuses on implementing software architecture and design principles
 
 #### **Meeting Etiquette**
 - Be punctual and prepared for meetings.  
-- **If you’re late, treats for the team are on you! -> chocolates for Mahboubah please!**  
+- **If you’re late, treats for the team are on you! -> chocolates for Mahbouba please!**  
 - **Absences:**  
   - Missing **2 meetings** will result in a warning.  
   - Missing **3 meetings** will be escalated and reported.  
@@ -53,7 +53,7 @@ This project focuses on implementing software architecture and design principles
 
 #### **Feedback and Conflict Resolution**
 - Provide constructive, actionable feedback.  
-- Escalate unresolved conflicts to **Mahboubah (Scrum Master)** or **Evan (Product Manager)**.  
+- Escalate unresolved conflicts to **Mahbouba (Scrum Master)** or **Evan (Product Manager)**.  
 
 ---
 
