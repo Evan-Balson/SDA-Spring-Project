@@ -3,7 +3,7 @@ package com.sad.stockshark;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public class LandingController {
     @FXML
     private Label welcomeText;
 
