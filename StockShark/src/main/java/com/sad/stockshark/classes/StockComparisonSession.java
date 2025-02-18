@@ -1,6 +1,6 @@
 package com.sad.stockshark.classes;
 
-public class StockComparisonSession extends Data implements iStockComparison{
+public class StockComparisonSession implements iStockComparison{
 
     // Properties
     private float currentPrice;
@@ -9,7 +9,8 @@ public class StockComparisonSession extends Data implements iStockComparison{
 
     // Constructor
     public StockComparisonSession(String name, float currentPrice, String symbol, String stock1, String stock2) {
-        super(name, symbol); // Calls the superclass (Data) constructor
+        this.name = name;
+        this.symbol = symbol;
         this.currentPrice = currentPrice;
         this.stock1 = stock1;
         this.stock2 = stock2;
