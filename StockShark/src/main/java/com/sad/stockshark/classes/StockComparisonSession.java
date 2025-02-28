@@ -1,27 +1,40 @@
 package com.sad.stockshark.classes;
 
-public class StockComparisonSession extends Data implements iStockComparison{
+public class StockComparisonSession implements iStockComparison{
+
+    private iData idataInstance;
+    private iUserSession iusersessionInstance;
 
     // Properties
     private float currentPrice;
     private String stock1;
     private String stock2;
+    private String name;
+    private String symbol;
 
-    // Constructor
-    public StockComparisonSession(String name, float currentPrice, String symbol, String stock1, String stock2) {
-        super(name, symbol); // Calls the superclass (Data) constructor
+    // Constructor required interfaces iData and iNotification
+    public StockComparisonSession( iData iD, iUserSession iU, String name, float currentPrice, String symbol, String stock1, String stock2) {
+        this.idataInstance = iD;
+        this.iusersessionInstance = iU;
+        this.name = name;
+        this.symbol = symbol;
         this.currentPrice = currentPrice;
         this.stock1 = stock1;
         this.stock2 = stock2;
     }
+    // Getter for name
+    public String getName() {
+        return name;
+    }
+
 
     // Getter for symbol
-    public String symbol(){
+    public String getSymbol(){
         return symbol;
     }
 
     // Getter for stock1
-     public String getStock1(){
+    public String getStock1(){
         return stock1;
     }
 
@@ -32,7 +45,7 @@ public class StockComparisonSession extends Data implements iStockComparison{
 
 
     // Compare stocks
-    public void compareStocks(String stock1, String stock2){
-        return "Comparing result between " + stock1 + " and " + stock2;
+    public String compareStocks(){
+        return "Comparing result between " + this.stock1 + " and " + this.stock2;
     }
 }
