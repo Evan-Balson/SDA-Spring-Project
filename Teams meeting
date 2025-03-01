@@ -50,4 +50,13 @@ Software Architecture & Design
 19:00 - 20:30 (GMT)
 Meeting link:https://teams.microsoft.com/l/meetup-join/19%3ameeting_NTFjZjMxZDAtYzg2Mi00MzJiLTk1MTQtM2JkMDk5Y2Y2YzU3%40thread.v2/0?context=%7b%22Tid%22%3a%225fe65063-5c37-47fb-b4cc-e42659e607ed%22%2c%22Oid%22%3a%221f9f1a07-859f-457d-98cf-511bba6a69fe%22%7d
 
-Note:
+Updates:
+
+-Only have one branch you work in and create pull requests in.
+-When commiting, message the chat to make sure request is accepted.
+-Business type model has been started by Mahbouba.
+-Implementation of Notification and StockComparisonSession done by Mahbouba.
+-Use production branch if making any developments to the code.
+-Wireframes need to add extra pages.
+-Continue implementation and working on sprint 2 tasks.
+
