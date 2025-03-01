@@ -1,5 +1,6 @@
 package com.sad.stockshark.classes;
 
+
 public class StockComparisonSession implements iStockComparison{
 
     private iData idataInstance;
@@ -48,4 +49,7 @@ public class StockComparisonSession implements iStockComparison{
     public String compareStocks(){
         return "Comparing result between " + this.stock1 + " and " + this.stock2;
     }
+=======
+public class StockComparisonSession {
+
 }
