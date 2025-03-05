@@ -45,11 +45,10 @@ public class StockComparisonSession implements iStockComparison{
     }
 
 
-    // Compare stocks
-    public String compareStocks(){
+    @Override
+    public String compareStocks(String stock1, String stock2) {
         return "Comparing result between " + this.stock1 + " and " + this.stock2;
     }
-=======
-public class StockComparisonSession {
+
 
 }

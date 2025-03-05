@@ -5,6 +5,11 @@ public class DataAggregator implements iStockData {
 
     }
 
+    @Override
+    public void saveNotification(String message) {
+
+    }
+
     public void updateStockData() {
 
     }

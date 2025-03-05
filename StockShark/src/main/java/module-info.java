@@ -2,6 +2,7 @@ module com.sad.stockshark {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.sql;
+    requires java.rmi;
 
 
     opens com.sad.stockshark to javafx.fxml;
