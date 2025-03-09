@@ -49,7 +49,6 @@ public class StockComparisonSession implements iStockComparison{
     public String compareStocks(){
         return "Comparing result between " + this.stock1 + " and " + this.stock2;
     }
-=======
 public class StockComparisonSession {
 
 }
