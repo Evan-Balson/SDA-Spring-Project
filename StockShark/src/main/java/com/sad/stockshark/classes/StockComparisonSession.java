@@ -45,6 +45,7 @@ public class StockComparisonSession implements iStockComparison{
 
 
     // Compare stocks
+    @Override
     public String compareStocks(){
         return "Comparing result between " + this.stock1 + " and " + this.stock2;
     }
