@@ -12,5 +12,9 @@
   </padding>
 
   <Label fx:id="welcomeText"/>
+<<<<<<< HEAD
   <Button text="Hello!" />
+=======
+  <Button text="Hello!" onAction="#getDetails"/>
+>>>>>>> origin/main
 </VBox>
