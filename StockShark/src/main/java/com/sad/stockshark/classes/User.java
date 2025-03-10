@@ -1,16 +1,25 @@
 package com.sad.stockshark.classes;
 
 public class User implements iStockViewer,iLogin{
+
+    private boolean isSessionOpen = false; //is the user logged in
+
     public void viewStockDetails() {
-        // Implementation code
+        if (isSessionOpen) {
+            System.out.println("Displaying stock details.."); //could also display the portfolio
+        } else {
+            System.out.println("Please login first to view stock details.");
+        }
     }
 
     public boolean login(String username, String password) {
-        // Implementation code
+        isSessionOpen = true;
+        System.out.println(username + " logged in successfully.");
         return true;
     }
 
     public void logout() {
-        // Implementation code
+        isSessionOpen = false;
+        System.out.println("Logged out successfully.");
     }
 }
