@@ -1,6 +1,6 @@
 package com.sad.stockshark.classes;
 
-public class User implements iStockViewer,iLogin{
+public class User implements iStockViewer, iLogin {
 
     private boolean isSessionOpen = false; //is the user logged in
 
