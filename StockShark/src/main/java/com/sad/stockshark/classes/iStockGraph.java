@@ -6,3 +6,4 @@ import java.util.List;
 public interface iStockGraph {
     void generateGraph(List<XYChart.Series<String, Number>> seriesList);
 }
+ 

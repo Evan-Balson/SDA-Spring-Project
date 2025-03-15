@@ -16,7 +16,7 @@
             <Button fx:id="compareButton" text="Compare" onAction="#handleCompareButton"/>
         </HBox>
 
-        <LineChart fx:id="stockChart">
+        <LineChart fx:id="stockChart"> 
             <xAxis>
                 <CategoryAxis label="Month"/>
             </xAxis>

@@ -17,7 +17,7 @@ public class GraphicalComponent implements iStockDisplay {  // ○ Provides `iSt
 
     /**
      * Constructor: Injects required dependencies.
-     * - `LineChart` is required to render graphs.
+     * - `LineChart` is required to render graphs. 
      * - `iStockGraph` is required for graph generation.
      */
     public GraphicalComponent(LineChart<String, Number> stockChart, iStockGraph stockGraph) {

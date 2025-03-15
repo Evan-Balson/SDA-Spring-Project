@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * StockComparisonController acts as the **Stock Comparison Graphs/Dashboard**.
+ * StockComparisonController acts as the **Stock Comparison Graphs/Dashboard**. 
  * 
  * - **Provides (○) `iStockGraph`** → Implements `iStockGraph` for generating stock graphs.
  * - **Used by (⊂) `GraphicalComponent`** → GraphicalComponent requires `iStockGraph` from here.
