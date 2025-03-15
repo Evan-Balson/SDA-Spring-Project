@@ -1,6 +1,5 @@
 package com.sad.stockshark.classes;
 
-
 public class StockComparisonSession implements iStockComparison{
 
     private iNotification notificationInstance;
@@ -32,8 +31,9 @@ public class StockComparisonSession implements iStockComparison{
 
     // Compare stocks
     @Override
+
     public String compareStocks(String stock1, String stock2){
         String result = "Comparing result between " + this.stock1 + " and " + this.stock2;
         return result;
-    }
+
 }
