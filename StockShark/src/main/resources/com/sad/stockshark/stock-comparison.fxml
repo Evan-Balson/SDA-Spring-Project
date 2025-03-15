@@ -1,26 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.chart.*?>
+
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.chart.*?>
 
-<VBox xmlns="http://javafx.com/javafx/8.0" xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="com.sad.stockshark.controllers.StockComparisonController"
-      alignment="CENTER" spacing="10">
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.sad.stockshark.Controllers.StockComparisonController">
+    
+    <VBox spacing="10" alignment="CENTER">
+        <HBox spacing="10">
+            <Label text="Stock 1:"/>
+            <TextField fx:id="stock1Field"/>
+            <Label text="Stock 2:"/>
+            <TextField fx:id="stock2Field"/>
+            <Button fx:id="compareButton" text="Compare" onAction="#handleCompareButton"/>
+        </HBox>
 
-    <TextField fx:id="stock1Field" promptText="Enter Stock 1"/>
-    <TextField fx:id="stock2Field" promptText="Enter Stock 2"/>
-
-    <HBox alignment="CENTER">
-        <Button fx:id="compareButton" text="Compare" onAction="#handleCompareButton"/>
-    </HBox>
-
-    <Pane>
         <LineChart fx:id="stockChart">
-            <xAxis><CategoryAxis label="Time"/></xAxis>
-            <yAxis><NumberAxis label="Price"/></yAxis>
+            <xAxis>
+                <CategoryAxis label="Month"/>
+            </xAxis>
+            <yAxis>
+                <NumberAxis label="Stock Price"/>
+            </yAxis>
         </LineChart>
-    </Pane>
+    </VBox>
 
-</VBox>
-
-
+</AnchorPane>
