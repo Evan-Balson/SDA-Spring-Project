@@ -1,18 +1,18 @@
 package com.sad.stockshark.classes;
 
 // class to handle notification system
-public class NotificationSystem implements iNotification {
+public class NotificationSystem implements iNotification{
 
     // Reference to database
-    private iData idataInstance;
+    private iDatabase databaseInstance;
 
     // Constructor to inject database dependency
-    public NotificationSystem(iData idataInstance){
-        // check for null in idataInstance
-        if (idataInstance == null){
-            throw new IllegalArgumentException( "Data is null");
+    public NotificationSystem(iDatabase databaseInstance){
+        // check for null in iDatabase
+        if (databaseInstance == null){
+            throw new IllegalArgumentException( "Database is null");
         }
-        this.idataInstance = idataInstance;
+        this.databaseInstance = databaseInstance;
     }
 
     // Declare message
@@ -24,7 +24,7 @@ public class NotificationSystem implements iNotification {
         this.message = message;
 
         // Log the notification message in the database
-        idataInstance.saveNotification(message);
+        databaseInstance.saveNotification(message);
 
         System.out.println("Notification: "+ message);
     }
