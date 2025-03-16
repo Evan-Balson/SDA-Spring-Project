@@ -1,0 +1,235 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.0">
+  <diagram name="Page-1" id="lrK7xNwkpYAS1x_pXq5v">
+    <mxGraphModel dx="3447" dy="1373" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-1" value="System interfaces" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=5" vertex="1" parent="1">
+          <mxGeometry x="354" width="120" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-25" target="uDGq6UloSC5Wl1x5RrpD-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-25" target="uDGq6UloSC5Wl1x5RrpD-56">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="60.33333333333337" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-25" value="Sign-up / Login" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="107.25" y="45" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-121" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-29" target="uDGq6UloSC5Wl1x5RrpD-75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-29" value="Main Actor: User (new user)&lt;div&gt;Steps:&lt;/div&gt;&lt;div&gt;1. User navigates to the sign-up/login page.&lt;/div&gt;&lt;div&gt;2.&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;User enters email, username, and password (for sign-up) or login details (for login)/continue with Google/Facebook.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;3. System validates details and grants access if correct.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;4. If incorrect, system prompts user to re-enter details or reset password.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;5. If sign-up/login successful, system redirects user to the dashboard.&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;glass=0;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40.5" y="125" width="313.5" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-31" target="uDGq6UloSC5Wl1x5RrpD-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-31" target="uDGq6UloSC5Wl1x5RrpD-77">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-31" value="Search stocks" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="107.25" y="320" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-32" target="uDGq6UloSC5Wl1x5RrpD-78">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-32" value="&lt;div&gt;Main Actor: User&lt;/div&gt;&lt;div&gt;Steps:&lt;/div&gt;&lt;div&gt;1. User navigates to the search bar.&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. User enters stock symbol (ticker symbol) or company.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. System fetches real-time stock data from the API.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3. System displays stock price, historical trends, and other relevant details.&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;glass=0;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40.5" y="400" width="313.5" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-34" target="uDGq6UloSC5Wl1x5RrpD-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-34" target="uDGq6UloSC5Wl1x5RrpD-83">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-34" value="View stock graph" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="107.25" y="538" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-35" target="uDGq6UloSC5Wl1x5RrpD-84">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-35" value="&lt;div&gt;Main Actor: User&lt;/div&gt;&lt;div&gt;Steps:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;User selects a stock from search results.&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. System retrieves historical stock data.&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3. System generates and displays a price trend graph.&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;glass=0;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40.5" y="618" width="313.5" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-37" target="uDGq6UloSC5Wl1x5RrpD-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-37" target="uDGq6UloSC5Wl1x5RrpD-89">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-37" value="Compare stocks" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="107.25" y="738" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-38" target="uDGq6UloSC5Wl1x5RrpD-88">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-38" value="&lt;div&gt;Main Actor: User&lt;/div&gt;&lt;div&gt;Steps:&lt;/div&gt;&lt;div&gt;&lt;div&gt;1. User selects multiple stocks to compare.&lt;/div&gt;&lt;div&gt;2. System fetches historical price data for selected stocks.&lt;/div&gt;&lt;div&gt;3. System displays stock trends on a single graph.&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;glass=0;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40.5" y="818" width="313.5" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-40" target="uDGq6UloSC5Wl1x5RrpD-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-40" target="uDGq6UloSC5Wl1x5RrpD-94">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-40" value="Buy / Sell stocks" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="107.25" y="938" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-41" target="uDGq6UloSC5Wl1x5RrpD-93">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-41" value="&lt;div&gt;Main Actor: User&lt;/div&gt;&lt;div&gt;Steps:&lt;/div&gt;&lt;div&gt;&lt;div&gt;1. User selects a stock and chooses the &quot;Buy&quot; or &quot;Sell&quot; option.&lt;/div&gt;&lt;div&gt;2. System redirects to the payment platform for transaction execution.&lt;/div&gt;&lt;div&gt;3. After completion, system updates the user’s portfolio.&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;glass=0;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40.5" y="1018" width="313.5" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-43" target="uDGq6UloSC5Wl1x5RrpD-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-101" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-43" target="uDGq6UloSC5Wl1x5RrpD-99">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-43" value="Manage portfolio" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="107.25" y="1200" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-100" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-44" target="uDGq6UloSC5Wl1x5RrpD-98">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-44" value="&lt;div&gt;Main Actor: User&lt;/div&gt;&lt;div&gt;Steps:&lt;/div&gt;&lt;div&gt;&lt;div&gt;1. User accesses the &quot;Portfolio&quot; section.&lt;/div&gt;&lt;div&gt;2. System displays a summary of owned stocks, current prices, and profit/loss.&lt;/div&gt;&lt;div&gt;3. User can remove stocks from the portfolio if sold.&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;glass=0;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40.5" y="1280" width="313.5" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-46" target="uDGq6UloSC5Wl1x5RrpD-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-106" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-46" target="uDGq6UloSC5Wl1x5RrpD-105">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-46" value="Add / Remove from watchlist" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="107.25" y="1410" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-47" value="&lt;div&gt;Main Actor: User&lt;/div&gt;&lt;div&gt;Steps:&lt;/div&gt;&lt;div&gt;&lt;div&gt;1. User clicks the &quot;Watchlist&quot; icon next to a stock.&lt;/div&gt;&lt;div&gt;2. System adds stock to the watchlist and displays confirmation.&lt;/div&gt;&lt;div&gt;3. To remove, user clicks the &quot;Watchlist&quot; icon again, and the system removes it.&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;glass=0;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40.5" y="1490" width="313.5" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-49" target="uDGq6UloSC5Wl1x5RrpD-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-111" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-49" target="uDGq6UloSC5Wl1x5RrpD-109">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-49" value="Fetch stock data via API" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="107.25" y="1640" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-114" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-50" target="uDGq6UloSC5Wl1x5RrpD-110">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-50" value="&lt;div&gt;Main Actor: User&lt;/div&gt;&lt;div&gt;Steps:&lt;/div&gt;&lt;div&gt;&lt;div&gt;1. User accesses API documentation for stock data retrieval.&lt;/div&gt;&lt;div&gt;2. User makes a request with a stock symbol and time range.&lt;/div&gt;&lt;div&gt;3. System returns stock price data in JSON format.&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;glass=0;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40.5" y="1720" width="313.5" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-52" target="uDGq6UloSC5Wl1x5RrpD-54">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="197.28571428571445" y="2059" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-118" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-52" target="uDGq6UloSC5Wl1x5RrpD-116">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-52" value="Customise preferences" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="107.25" y="1872" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-120" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-54" target="uDGq6UloSC5Wl1x5RrpD-117">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-54" value="&lt;div&gt;Main Actor: User&lt;/div&gt;&lt;div&gt;Steps:&lt;/div&gt;&lt;div&gt;&lt;div&gt;1.&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;User accesses settings from the navigation menu.&lt;/div&gt;&lt;div&gt;2.&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;User selects customisation options (theme, notifications, layout).&lt;/div&gt;&lt;div&gt;3.&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;System saves and applies changes immediately.&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;glass=0;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40.5" y="1959" width="313.5" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-56" value="user_login" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="586.13" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-76" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-75" target="uDGq6UloSC5Wl1x5RrpD-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-75" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface type&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;iLogin&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+boolean login(String username, String password)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+void logout()&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="507.07000000000005" y="166" width="278.13" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-77" target="uDGq6UloSC5Wl1x5RrpD-78">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-77" value="search_stocks" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="591" y="310" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-78" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface type&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;iStockViewer&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+void viewStockDetails()&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="551" y="425" width="190" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-83" target="uDGq6UloSC5Wl1x5RrpD-84">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-83" value="view_stock_graph" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="591" y="528" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-84" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface type&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;iStockGraph&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+void generateGraph()&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="551.14" y="633" width="190" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-88" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface type&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;iStockComparison&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+String compareStocks()&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="551.14" y="833" width="190" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-89" target="uDGq6UloSC5Wl1x5RrpD-88">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-89" value="compare_stocks" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="591.14" y="728" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-93" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface type&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;iPortfolio&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+void addStock(String stock)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+void removeStock(String stock)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="551.14" y="1043" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-95" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-94" target="uDGq6UloSC5Wl1x5RrpD-93">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-94" value="buy_sell_stocks" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="591" y="928" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-98" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface type&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;iPortfolio&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+void addStock(String stock)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+void removeStock(String stock)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="551.14" y="1290" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-99" target="uDGq6UloSC5Wl1x5RrpD-98">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-99" value="manage_portfolio" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="591" y="1190" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-103" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface type&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;iPortfolio&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+void addStock(String stock)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+void removeStock(String stock)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="551" y="1510" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-108" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-105" target="uDGq6UloSC5Wl1x5RrpD-103">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-105" value="add_remove_from&lt;div&gt;_watchlist&lt;/div&gt;" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="591" y="1400" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-47">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="550" y="1550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-113" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-109" target="uDGq6UloSC5Wl1x5RrpD-110">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-109" value="fetch_stock_data" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="591" y="1630" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-110" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface type&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;iStockData&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+void updateStockData()&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="551" y="1745" width="190" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-119" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uDGq6UloSC5Wl1x5RrpD-116" target="uDGq6UloSC5Wl1x5RrpD-117">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-116" value="customise_profille" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="591" y="1862" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uDGq6UloSC5Wl1x5RrpD-117" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface type&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;iUserSession&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+void startSession(String username)&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+void endSession()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+boolean isSessionActive()&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="551" y="1959" width="190" height="110" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
