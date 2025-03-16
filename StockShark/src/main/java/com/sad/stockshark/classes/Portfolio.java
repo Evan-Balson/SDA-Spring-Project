@@ -6,6 +6,12 @@ public class Portfolio implements iPortfolio{
 
     private final ArrayList<String> portfolioStocks = new ArrayList<>();
 
+    @Override
+    public void displayPortfolio() {
+        System.out.println("Portfolio stocks on display");
+        portfolioStocks.forEach(System.out::println);
+    }
+
     public void addStock(String stock) {
         portfolioStocks.add(stock);
         System.out.println(stock + " added to portfolio");
