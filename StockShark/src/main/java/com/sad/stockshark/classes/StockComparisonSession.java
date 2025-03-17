@@ -12,7 +12,7 @@ public class StockComparisonSession implements iStockComparison{
 
     // Constructor required interfaces iData and iNotification
     public StockComparisonSession( iNotification iN, iUserSession iU, String stock1, String stock2) {
-        this.iNotification = iN;
+        this.notificationInstance = iN;
         this.usersessionInstance = iU;
         this.stock1 = stock1;
         this.stock2 = stock2;
@@ -28,12 +28,9 @@ public class StockComparisonSession implements iStockComparison{
         return stock2;
     }
 
-
     // Compare stocks
     @Override
-
-    public String compareStocks(String stock1, String stock2){
-        String result = "Comparing result between " + this.stock1 + " and " + this.stock2;
-        return result;
-
+    public void compareStocks(String stock1, String stock2) {
+        System.out.println("Comparing " + stock1 + " and " + stock2);
+    }
 }
