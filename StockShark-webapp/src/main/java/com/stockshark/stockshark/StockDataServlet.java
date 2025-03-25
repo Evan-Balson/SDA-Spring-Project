@@ -15,7 +15,7 @@ import java.net.http.HttpResponse;
 
 @WebServlet("/StockData")
 public class StockDataServlet extends HttpServlet {
-    private static final String API_KEY = "G8NL5HR3TNS479Q9"; // Replace with your key
+    private static final String API_KEY = "JGCLFOUSE8PP5S1P"; // Replace with your key
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
