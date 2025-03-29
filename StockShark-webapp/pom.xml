@@ -49,6 +49,18 @@
             <version>3.17.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>io.github.cdimascio</groupId>
+            <artifactId>dotenv-java</artifactId>
+            <version>2.3.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.29</version> <!-- Ensure this matches the latest or a compatible version -->
+        </dependency>
+
 
     </dependencies>
 
