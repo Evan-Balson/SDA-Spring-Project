@@ -1,4 +1,4 @@
-package com.stockshark.stockshark;
+package com.stockshark.stockshark.controllers;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

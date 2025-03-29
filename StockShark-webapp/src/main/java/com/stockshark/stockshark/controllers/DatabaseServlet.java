@@ -1,4 +1,4 @@
-package com.stockshark.stockshark;
+package com.stockshark.stockshark.controllers;
 
 import com.stockshark.config.DatabaseConfig;
 import jakarta.servlet.ServletException;
