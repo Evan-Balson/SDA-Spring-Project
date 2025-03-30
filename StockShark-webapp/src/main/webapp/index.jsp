@@ -20,11 +20,13 @@
                         var data = JSON.parse(xhr.responseText);
                         if (data.error) {
                             document.getElementById('dataDisplay').innerHTML = 'Error: ' + data.error;
+                        } else if (data.success) {
+                            document.getElementById('dataDisplay').innerHTML = '<h3>Operation successful: Data has been fetched and inserted for ' + stockSymbol.toUpperCase() + '</h3>';
                         } else {
-                            // Display stock price (modify as needed based on Alpha Vantage response)
-                            document.getElementById('dataDisplay').innerHTML =
-                                '<h3>Stock Data for ' + stockSymbol.toUpperCase() + '</h3>' +
-                                '<pre>' + JSON.stringify(data, null, 2) + '</pre>';
+                            // Assuming the response includes some data to display
+                            var displayHtml = '<h3>Stock Data for ' + stockSymbol.toUpperCase() + '</h3>';
+                            displayHtml += '<pre>' + JSON.stringify(data, null, 2) + '</pre>';
+                            document.getElementById('dataDisplay').innerHTML = displayHtml;
                         }
                     } catch (e) {
                         document.getElementById('dataDisplay').innerHTML = 'Error parsing data.';
@@ -39,6 +41,7 @@
             xhr.send();
         }
     </script>
+
 </head>
 <body>
 <h1>Check Stock Data</h1>

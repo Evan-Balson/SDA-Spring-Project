@@ -4,18 +4,18 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class User implements iUserSession, iPortfolio{
+public class UserService implements iUserSession, iPortfolio{
 
     private String userID;
 
     //required login interface
-    private Login Login;
+    private LoginService Login;
     private Map<String, List<String>> stockPortfolio;
     private boolean isSessionOpen = false;
 
 
     // constructor to initialize the required interface
-    public User(Login login) {
+    public UserService(LoginService login) {
         this.Login = login;
         stockPortfolio = new HashMap<String, List<String>>();
         this.userID = "Guest";
@@ -67,8 +67,8 @@ public class User implements iUserSession, iPortfolio{
         }
     }
 
-    public String Login(String userName, String password) {
-       String user = Login.loginUser(userName, password);
+    public String Login(String email, String password) {
+       String user = Login.loginUser(email, password);
         return this.userID = user;
     }
 

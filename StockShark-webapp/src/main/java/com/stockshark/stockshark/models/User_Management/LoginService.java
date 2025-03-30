@@ -1,6 +1,6 @@
 package com.stockshark.stockshark.models.User_Management;
 
-public class Login implements iLogin {
+public class LoginService implements iLogin {
 
     @Override
     public void registerUser(String username, String password) {
@@ -10,7 +10,7 @@ public class Login implements iLogin {
     }
 
     @Override
-    public String loginUser(String username, String password) {
+    public String loginUser(String email, String password) {
         // access the database
         // check if the user is existing
         // if yes
