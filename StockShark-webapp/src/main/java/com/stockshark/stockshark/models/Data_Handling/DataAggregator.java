@@ -10,6 +10,8 @@ public class DataAggregator implements iStockData {
     public List<StockData> formatData_from_AlphaVantage(JSONObject jsonData) {
         List<StockData> stockDataList = new ArrayList<>();
 
+        System.out.println(jsonData);
+
         System.out.println("Data from AlphaVantage Now being PARSED");
 
         // Assuming 'jsonData' is a JSONObject containing the response from the API
