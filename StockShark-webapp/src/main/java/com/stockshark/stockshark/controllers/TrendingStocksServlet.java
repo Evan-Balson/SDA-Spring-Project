@@ -28,20 +28,22 @@ public class TrendingStocksServlet extends HttpServlet {
         response.setContentType("application/json");
         PrintWriter out = response.getWriter();
 
-        List<StockData> trendingStocks = service.getTrendingStocks(); // You'll need to implement this method
+        List<StockData> trendingStocks = service.getTrendingStocks();
+        System.out.println("Trending Stocks: " + trendingStocks);
 
         if (trendingStocks != null && !trendingStocks.isEmpty()) {
             JSONArray jsonArray = new JSONArray();
             for (StockData stock : trendingStocks) {
                 JSONObject stockJson = new JSONObject();
-                stockJson.put("symbol", stock.getSymbol()); // Assuming your StockData has a getSymbol()
-                stockJson.put("name", "Stock Name Here"); // You might need to fetch the name too
-                stockJson.put("price", stock.getClose()); // Assuming getClose() gives the current price
-                // You'll need to calculate and set "change" and "change%" here
-                stockJson.put("change", "+X.XX");
-                stockJson.put("changePercent", "+Y.YY%");
+                stockJson.put("symbol", stock.getSymbol());
+                stockJson.put("price", stock.getClose()); 
+                stockJson.put("change", stock.getChange());
+                stockJson.put("changePercent", stock.getChangePercent());
                 stockJson.put("volume", stock.getVolume());
-                // Add other fields as needed
+                stockJson.put("averageVolume", stock.getAvgVolume3M());
+                stockJson.put("marketCap", stock.getMarketCap());
+                stockJson.put("peRatio", stock.getPeRatio());
+                stockJson.put("fiftyTwoWeekChange", stock.getFiftyTwoWeekChange());
                 jsonArray.put(stockJson);
             }
             out.print(jsonArray);

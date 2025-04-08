@@ -4,14 +4,4 @@
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
          version="6.0">
 
-    <servlet>
-        <servlet-name>TrendingStocksServlet</servlet-name>
-        <servlet-class>com.stockshark.stockshark.controllers.TrendingStocksServlet</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>TrendingStocksServlet</servlet-name>
-        <url-pattern>/TrendingStocks</url-pattern>
-    </servlet-mapping>
-
 </web-app>

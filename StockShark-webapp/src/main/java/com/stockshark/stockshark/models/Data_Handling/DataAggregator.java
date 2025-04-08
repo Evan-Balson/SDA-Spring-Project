@@ -14,6 +14,10 @@ public class DataAggregator implements iStockData {
 
         System.out.println("Data from AlphaVantage Now being PARSED");
 
+        // Get the symbol from the metadata
+        JSONObject metaData = jsonData.getJSONObject("Meta Data");
+        String symbol = metaData.optString("2. Symbol", "Unknown"); // Default to "Unknown" if not found
+
         // Assuming 'jsonData' is a JSONObject containing the response from the API
         JSONObject monthlySeries = jsonData.getJSONObject("Monthly Adjusted Time Series");
 
@@ -30,7 +34,7 @@ public class DataAggregator implements iStockData {
                 String volume = dailyData.optString("6. volume", "Not Available");
 
                 // Create a new StockData object and add it to the list
-                StockData stockData = new StockData(date, open, high, low, close, volume);
+                StockData stockData = new StockData(symbol, date, open, high, low, close, volume);
                 stockDataList.add(stockData);
 
 

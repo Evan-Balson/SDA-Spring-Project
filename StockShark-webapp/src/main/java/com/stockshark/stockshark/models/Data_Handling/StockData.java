@@ -8,6 +8,12 @@ public class StockData {
     private String low;
     private String close;
     private String volume;
+    private double change;
+    private double changePercent;
+    private String avgVolume3M;
+    private String marketCap;
+    private String peRatio;
+    private String fiftyTwoWeekChange;
 
     public StockData(String symbol, String date, String open, String high, String low, String close, String volume) {
         this.symbol = symbol;
@@ -17,10 +23,16 @@ public class StockData {
         this.low = low;
         this.close = close;
         this.volume = volume;
+    }
 
+    public StockData() {
     }
 
     // Getters
+    public String getSymbol() {
+        return symbol;
+    }
+
     public String getDate() {
         return date;
     }
@@ -45,9 +57,34 @@ public class StockData {
         return volume;
     }
 
-    public String getSymbol() { return symbol; }
+    public double getChange() {
+        return change;
+    }
+
+    public double getChangePercent() {
+        return changePercent;
+    }
+
+    public String getAvgVolume3M() {
+        return avgVolume3M;
+    }
+
+    public String getMarketCap() {
+        return marketCap;
+    }
+
+    public String getPeRatio() {
+        return peRatio;
+    }
+
+    public String getFiftyTwoWeekChange() {
+        return fiftyTwoWeekChange;
+    }
 
     // Setters
+    public void setSymbol(String symbol) {
+        this.symbol = symbol;
+    }
 
     public void setDate(String date) {
         this.date = date;
@@ -73,16 +110,51 @@ public class StockData {
         this.volume = volume;
     }
 
+    public void setChange(double change) {
+        this.change = change;
+    }
+
+    public void setChangePercent(double changePercent) {
+        this.changePercent = changePercent;
+    }
+
+    public void setVolume(long volume) {
+        this.volume = String.valueOf(volume);
+    }
+
+    public void setAvgVolume3M(String avgVolume3M) {
+        this.avgVolume3M = avgVolume3M;
+    }
+
+    public void setMarketCap(String marketCap) {
+        this.marketCap = marketCap;
+    }
+
+    public void setPeRatio(String peRatio) {
+        this.peRatio = peRatio;
+    }
+
+    public void setFiftyTwoWeekChange(String fiftyTwoWeekChange) {
+        this.fiftyTwoWeekChange = fiftyTwoWeekChange;
+    }
+
+
     @Override
     public String toString() {
         return "StockData{" +
-                "date='" + date + '\'' +
-                ", open=" + open +
-                ", high=" + high +
-                ", low=" + low +
-                ", close=" + close +
-                ", volume=" + volume +
+                "symbol='" + symbol + '\'' +
+                ", date='" + date + '\'' +
+                ", open='" + open + '\'' +
+                ", high='" + high + '\'' +
+                ", low='" + low + '\'' +
+                ", close='" + close + '\'' +
+                ", volume='" + volume + '\'' +
+                ", change=" + change +
+                ", changePercent=" + changePercent +
+                ", avgVolume3M='" + avgVolume3M + '\'' +
+                ", marketCap='" + marketCap + '\'' +
+                ", peRatio='" + peRatio + '\'' +
+                ", fiftyTwoWeekChange='" + fiftyTwoWeekChange + '\'' +
                 '}';
     }
 }
-

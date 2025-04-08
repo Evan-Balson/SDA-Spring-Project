@@ -37,7 +37,9 @@ public class StockDataService {
 
     public List<StockData> getTrendingStocks() {
         // Let's say you have a function in your Database class to get all stock data
-        List<StockData> allStocks = Database.getAllStockData(); // You'll need to implement this in your Database class
+        List<StockData> allStocks = Database.getAllStockData();
+        System.out.println("All Stocks: " + allStocks);
+
 
         if (allStocks == null || allStocks.isEmpty()) {
             return List.of(); // Return an empty list if there's no data

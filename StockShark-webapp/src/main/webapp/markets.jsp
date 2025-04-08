@@ -80,9 +80,8 @@
             <thead>
                 <tr>
                     <th>Symbol</th>
-                    <th>Name</th>
                     <th>Price</th>
-                    <th>Change</th>
+                    <th>Price Change</th>
                     <th>Change %</th>
                     <th>Volume</th>
                     <th>Avg Vol (3M)</th>
@@ -94,7 +93,6 @@
             <tbody id="trendingStocksTableBody">
                 <tr>
                     <td>QBTS</td>
-                    <td>D-Wave Quantum Inc.</td>
                     <td>10.15</td>
                     <td class="positive">+3.24</td>
                     <td class="positive">+46.87%</td>
@@ -106,7 +104,6 @@
                 </tr>
                 <tr>
                     <td>NVDA</td>
-                    <td>NVIDIA Corporation</td>
                     <td>121.67</td>
                     <td class="positive">+6.09</td>
                     <td class="positive">+5.27%</td>
@@ -147,7 +144,6 @@
                         data.forEach(stock => {
                             let row = tableBody.insertRow();
                             let symbolCell = row.insertCell();
-                            let nameCell = row.insertCell();
                             let priceCell = row.insertCell();
                             let changeCell = row.insertCell();
                             let changePercentCell = row.insertCell();
@@ -158,7 +154,6 @@
                             let fiftyTwoWeekChangeCell = row.insertCell();
 
                             symbolCell.textContent = stock.symbol;
-                            nameCell.textContent = stock.name || 'N/A'; // Use 'N/A' if name is missing
                             priceCell.textContent = stock.price;
                             changeCell.textContent = stock.change;
                             changeCell.className = stock.change.startsWith('+') ? 'positive' : 'negative'; // Apply CSS class for color

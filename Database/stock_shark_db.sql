@@ -64,7 +64,6 @@ CREATE TABLE Users (
 );
 CREATE TABLE TrendingStock (
     Symbol VARCHAR(10),
-    Name VARCHAR(255),
     Price DECIMAL(10, 2),
     priceChange DECIMAL(10, 2),
     ChangePercent DECIMAL(10, 2),
@@ -115,8 +114,8 @@ INSERT INTO Users (user_id, email, password, FirstName, LastName, loginStatus) V
 
 -- Insert sample data into TrendingStock table
 INSERT INTO TrendingStock (Symbol, Name, Price, priceChange, ChangePercent, Volume, AverageVolume3M, MarketCap, PERatio, FiftyTwoWeekChange) VALUES
-('AAPL', 'Apple Inc.', 150.00, 2.00, 1.35, 1000000, 500000, 2000000000, 25.50, 10.00),
-('TSLA', 'Tesla Inc.', 300.00, -1.50, -0.50, 1500000, 750000, 800000000, 30.75, -5.00);
+('AAPL', 150.00, 2.00, 1.35, 1000000, 500000, 2000000000, 25.50, 10.00),
+('TSLA', 300.00, -1.50, -0.50, 1500000, 750000, 800000000, 30.75, -5.00);
 
 -- Insert sample data into Portfolio table
 INSERT INTO Portfolio (PortfolioName, CostBasis, MarketValue, DayChange, UnrealizedGainLoss, RealizedGainLoss, UserID) VALUES

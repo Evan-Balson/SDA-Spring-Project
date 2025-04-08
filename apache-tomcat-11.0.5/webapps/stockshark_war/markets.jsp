@@ -80,9 +80,8 @@
             <thead>
                 <tr>
                     <th>Symbol</th>
-                    <th>Name</th>
                     <th>Price</th>
-                    <th>Change</th>
+                    <th>Price Change</th>
                     <th>Change %</th>
                     <th>Volume</th>
                     <th>Avg Vol (3M)</th>
@@ -94,7 +93,6 @@
             <tbody id="trendingStocksTableBody">
                 <tr>
                     <td>QBTS</td>
-                    <td>D-Wave Quantum Inc.</td>
                     <td>10.15</td>
                     <td class="positive">+3.24</td>
                     <td class="positive">+46.87%</td>
@@ -106,7 +104,6 @@
                 </tr>
                 <tr>
                     <td>NVDA</td>
-                    <td>NVIDIA Corporation</td>
                     <td>121.67</td>
                     <td class="positive">+6.09</td>
                     <td class="positive">+5.27%</td>
@@ -127,23 +124,59 @@
     </div>
 
     <script>
-        // This is where your JavaScript to fetch and update the stock data will go
-        // For now, the table is filled with placeholder data.
-
         document.addEventListener('DOMContentLoaded', function() {
             const refreshButton = document.getElementById('refreshButton');
             const tableBody = document.getElementById('trendingStocksTableBody');
 
-            // In a real application, this button would trigger a JavaScript function
-            // to call your TrendingStocksServlet and update the table with fresh data.
-            refreshButton.addEventListener('click', function() {
-                alert('Refreshing data...');
-                // In a real scenario, you would make an AJAX call here
-                // to fetch the latest trending stock data and update the tableBody.
-            });
+            function fetchTrendingStocks() {
+                fetch('/TrendingStocks') // This is the URL you mapped in web.xml
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error(`HTTP error! status: ${response.status}`);
+                        }
+                        return response.json(); // Tell it to expect a JSON response
+                    })
+                    .then(data => {
+                        // 'data' is the JSON array of trending stocks your servlet sent
+                        // Now you need to update the table in your HTML with this data
+                        tableBody.innerHTML = ''; // Clear any existing rows
 
-            // You would also add event listeners to your other buttons
-            // to handle filtering and sorting actions.
+                        data.forEach(stock => {
+                            let row = tableBody.insertRow();
+                            let symbolCell = row.insertCell();
+                            let priceCell = row.insertCell();
+                            let changeCell = row.insertCell();
+                            let changePercentCell = row.insertCell();
+                            let volumeCell = row.insertCell();
+                            let avgVolumeCell = row.insertCell();
+                            let marketCapCell = row.insertCell();
+                            let peRatioCell = row.insertCell();
+                            let fiftyTwoWeekChangeCell = row.insertCell();
+
+                            symbolCell.textContent = stock.symbol;
+                            priceCell.textContent = stock.price;
+                            changeCell.textContent = stock.change;
+                            changeCell.className = stock.change.startsWith('+') ? 'positive' : 'negative'; // Apply CSS class for color
+                            changePercentCell.textContent = stock.changePercent;
+                            changePercentCell.className = stock.changePercent.startsWith('+') ? 'positive' : 'negative';
+                            volumeCell.textContent = stock.volume;
+                            avgVolumeCell.textContent = stock.avgVolume || 'N/A';
+                            marketCapCell.textContent = stock.marketCap || 'N/A';
+                            peRatioCell.textContent = stock.peRatio || 'N/A';
+                            fiftyTwoWeekChangeCell.textContent = stock.fiftyTwoWeekChange || 'N/A';
+                        });
+                    })
+                    .catch(error => {
+                        console.error('Error fetching trending stocks:', error);
+                        tableBody.innerHTML = '<tr><td colspan="10">Failed to load trending stocks.</td></tr>';
+                    });
+            }
+
+            // Call fetchTrendingStocks when the page loads
+            fetchTrendingStocks();
+
+            // Add an event listener to the refresh button to fetch data again
+            refreshButton.addEventListener('click', fetchTrendingStocks);
         });
     </script>
 </body>

@@ -81,14 +81,13 @@ public class Database {
             String connectionString = "jdbc:mysql://" + DatabaseConfig.getHost() + ":" + DatabaseConfig.getPort() + "/" + DatabaseConfig.getDatabaseName();
             conn = DriverManager.getConnection(connectionString, DatabaseConfig.getUser(), DatabaseConfig.getPassword());
 
-            String sql = "SELECT Symbol, Name, Price, priceChange, ChangePercent, Volume, AverageVolume3M, MarketCap, PERatio, FiftyTwoWeekChange FROM stocks_info"; // Assuming your table with this info is named 'stocks_info'
+            String sql = "SELECT Symbol, Price, priceChange, ChangePercent, Volume, AverageVolume3M, MarketCap, PERatio, FiftyTwoWeekChange FROM TrendingStock";
             stmt = conn.prepareStatement(sql);
             rs = stmt.executeQuery();
 
             while (rs.next()) {
                 StockData stock = new StockData();
                 stock.setSymbol(rs.getString("Symbol"));
-                stock.setName(rs.getString("Name"));
                 stock.setClose(String.valueOf(rs.getDouble("Price"))); // Assuming 'Price' is the current price
                 stock.setChange(rs.getDouble("priceChange"));
                 stock.setChangePercent(rs.getDouble("ChangePercent"));
