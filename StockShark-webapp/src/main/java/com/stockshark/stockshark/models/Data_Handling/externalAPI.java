@@ -11,8 +11,10 @@ import java.net.http.HttpResponse;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+// set up function for : https://twelvedata.com/pricing
+
 public class externalAPI {
-    private static final String API_KEY = "JGCLFOUSE8PP5S1P"; // Replace with your actual API key
+    private static final String API_KEY = "UB7G1TF6XDOR2D07"; // Replace with your actual API key
     private static final HttpClient client = HttpClient.newHttpClient();
 
     public JSONObject getStockData(String symbol) throws IOException, InterruptedException {
