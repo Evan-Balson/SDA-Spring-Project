@@ -3,7 +3,9 @@ package com.stockshark.stockshark.models.Data_Handling;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 import com.stockshark.config.DatabaseConfig;
@@ -24,17 +26,15 @@ public class Database {
     }
 
     public static void insertStockData(List<StockData> stockDataList, String symbol) {
-
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             String connectionString = "jdbc:mysql://" + DatabaseConfig.getHost() + ":" + DatabaseConfig.getPort() + "/" + DatabaseConfig.getDatabaseName();
             System.out.println("Connecting to " + connectionString);
             Connection conn = DriverManager.getConnection(connectionString, DatabaseConfig.getUser(), DatabaseConfig.getPassword());
 
-            // Handle your database logic here
             PreparedStatement stmt = conn.prepareStatement(
                     "INSERT INTO stock_prices (symbol, date, open, high, low, close, volume) " +
-                    "SELECT ?, ?, ?, ?, ?, ?, ? FROM dual " + // "dual" can be omitted in some databases like PostgreSQL
+                    "SELECT ?, ?, ?, ?, ?, ?, ? FROM dual " +
                     "WHERE NOT EXISTS ( " +
                     "    SELECT 1 FROM stock_prices WHERE symbol = ? AND date = ? " +
                     ")"
@@ -61,13 +61,55 @@ public class Database {
                 stmt.addBatch();
             }
 
-            stmt.executeBatch(); // Execute the batch
+            stmt.executeBatch();
 
+            if (conn != null) conn.close();
+        } catch (SQLException | ClassNotFoundException e) {
+            e.printStackTrace();
+            System.out.println("Failed to connect to the database or insert data.");
+        }
+    }
 
+    public static List<StockData> getAllStockData() {
+        List<StockData> allStocks = new ArrayList<>();
+        Connection conn = null;
+        PreparedStatement stmt = null;
+        ResultSet rs = null;
+
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            String connectionString = "jdbc:mysql://" + DatabaseConfig.getHost() + ":" + DatabaseConfig.getPort() + "/" + DatabaseConfig.getDatabaseName();
+            conn = DriverManager.getConnection(connectionString, DatabaseConfig.getUser(), DatabaseConfig.getPassword());
+
+            String sql = "SELECT Symbol, Name, Price, priceChange, ChangePercent, Volume, AverageVolume3M, MarketCap, PERatio, FiftyTwoWeekChange FROM stocks_info"; // Assuming your table with this info is named 'stocks_info'
+            stmt = conn.prepareStatement(sql);
+            rs = stmt.executeQuery();
+
+            while (rs.next()) {
+                StockData stock = new StockData();
+                stock.setSymbol(rs.getString("Symbol"));
+                stock.setName(rs.getString("Name"));
+                stock.setClose(String.valueOf(rs.getDouble("Price"))); // Assuming 'Price' is the current price
+                stock.setChange(rs.getDouble("priceChange"));
+                stock.setChangePercent(rs.getDouble("ChangePercent"));
+                stock.setVolume(rs.getLong("Volume"));
+                stock.setAvgVolume3M(rs.getString("AverageVolume3M"));
+                stock.setMarketCap(rs.getString("MarketCap"));
+                stock.setPeRatio(rs.getString("PERatio"));
+                stock.setFiftyTwoWeekChange(rs.getString("FiftyTwoWeekChange"));
+                allStocks.add(stock);
+            }
 
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
-            System.out.println("Failed to connect to the database.");
+            System.out.println("Error fetching all stock data.");
+        } finally {
+            // Close resources in a finally block to ensure they are always closed
+            try { if (rs != null) rs.close(); } catch (SQLException e) { e.printStackTrace(); }
+            try { if (stmt != null) stmt.close(); } catch (SQLException e) { e.printStackTrace(); }
+            try { if (conn != null) conn.close(); } catch (SQLException e) { e.printStackTrace(); }
         }
+
+        return allStocks;
     }
 }

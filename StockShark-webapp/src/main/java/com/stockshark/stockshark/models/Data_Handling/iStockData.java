@@ -7,4 +7,4 @@ import java.util.List;
 public interface iStockData {
     List<StockData> formatData_from_AlphaVantage(JSONObject jsonData);
 
-    }
+}
