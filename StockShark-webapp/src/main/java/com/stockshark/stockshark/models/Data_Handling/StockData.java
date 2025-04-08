@@ -1,6 +1,7 @@
 package com.stockshark.stockshark.models.Data_Handling;
 
 public class StockData {
+    private String symbol;
     private String date;
     private String open;
     private String high;
@@ -8,7 +9,8 @@ public class StockData {
     private String close;
     private String volume;
 
-    public StockData(String date, String open, String high, String low, String close, String volume) {
+    public StockData(String symbol, String date, String open, String high, String low, String close, String volume) {
+        this.symbol = symbol;
         this.date = date;
         this.open = open;
         this.high = high;
@@ -42,6 +44,8 @@ public class StockData {
     public String getVolume() {
         return volume;
     }
+
+    public String getSymbol() { return symbol; }
 
     // Setters
 
