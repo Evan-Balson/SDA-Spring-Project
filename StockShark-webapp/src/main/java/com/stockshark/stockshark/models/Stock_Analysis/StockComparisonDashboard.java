@@ -1,9 +1,13 @@
 package com.stockshark.stockshark.models.Stock_Analysis;
 
 import com.stockshark.stockshark.models.CompoundCoomponents.Data_Handling_Component;
+import com.stockshark.stockshark.models.CompoundCoomponents.Stock_Analysis_Component;
 import com.stockshark.stockshark.models.CompoundCoomponents.iUser_StockAnalysis_Management_Port;
 import com.stockshark.stockshark.models.Data_Handling.Database;
+import com.stockshark.stockshark.models.Data_Handling.StockData;
+import org.json.JSONObject;
 
+import java.io.IOException;
 import java.util.List;
 
 public class StockComparisonDashboard implements iUser_StockAnalysis_Management_Port {
@@ -21,9 +25,13 @@ public class StockComparisonDashboard implements iUser_StockAnalysis_Management_
     // see the examples below.
 
     @Override
-    public void DisplayTrendingStocks() {
-        // String result = dataHandling.getTrendingStockData();
+    public JSONObject DisplayTrendingStocks(String stockSymbol) throws IOException, InterruptedException {
+        return dataHandling.getTrendingStockData(stockSymbol);
         //chartsLayout.GenerateAreaChart(result);
+    }
+
+    public StockData formatGlobalQuoteData(JSONObject rawData){
+        return dataHandling.formatGlobalQuoteData(rawData);
     }
 
     @Override
@@ -39,5 +47,13 @@ public class StockComparisonDashboard implements iUser_StockAnalysis_Management_
 
     public void analyseData(List<String> stockSymbols) {
         AiAnalyser.analyseData(stockSymbols);
+    }
+
+    public Stock_Analysis_Component getStockAnalysisComponentPort() {
+        return new Stock_Analysis_Component();
+    }
+
+    public Data_Handling_Component getDataHandlingComponentPort(){
+        return new Data_Handling_Component();
     }
 }

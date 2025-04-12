@@ -1,7 +1,7 @@
 package com.stockshark.stockshark.models.Data_Handling;
 
 public class StockData {
-    private String symbol;
+    // Existing historical stock data fields
     private String date;
     private String open;
     private String high;
@@ -9,18 +9,68 @@ public class StockData {
     private String close;
     private String volume;
 
-    public StockData(String symbol, String date, String open, String high, String low, String close, String volume) {
-        this.symbol = symbol;
+    // New fields for live/trending stock data (Global Quote)
+    private String symbol;
+    private String price;
+    private String change;
+    private String changePercent;
+    private Boolean negative;
+
+    /**
+     * Constructor for historical stock data.
+     */
+    public StockData(String name, String date, String open, String high, String low, String close, String volume) {
+        this.symbol = name;
         this.date = date;
         this.open = open;
         this.high = high;
         this.low = low;
         this.close = close;
         this.volume = volume;
-
     }
 
-    // Getters
+    /**
+     * Constructor for historical stock data.
+     */
+    public StockData( String date, String open, String high, String low, String close, String volume) {
+        this.date = date;
+        this.open = open;
+        this.high = high;
+        this.low = low;
+        this.close = close;
+        this.volume = volume;
+    }
+
+    /**
+     * Constructor for Global Quote data from Alpha Vantage.
+     * This constructor includes only the fields relevant for trending stocks.
+     */
+    public StockData(String symbol, String price, String change, String changePercent) {
+        this.symbol = symbol;
+        this.price = price;
+        this.change = change;
+        this.changePercent = changePercent;
+        this.negative = (change != null && change.trim().startsWith("-"));
+    }
+
+    /**
+     * Overloaded constructor if you receive both historical and global quote data.
+     */
+    public StockData(String symbol, String date, String open, String high, String low,
+                     String close, String price, String volume, String change, String changePercent) {
+        this.symbol = symbol;
+        this.date = date;
+        this.open = open;
+        this.high = high;
+        this.low = low;
+        this.close = close;
+        this.price = price;
+        this.volume = volume;
+        this.change = change;
+        this.changePercent = changePercent;
+    }
+
+    // Getters for historical stock data
     public String getDate() {
         return date;
     }
@@ -45,10 +95,7 @@ public class StockData {
         return volume;
     }
 
-    public String getSymbol() { return symbol; }
-
-    // Setters
-
+    // Setters for historical stock data
     public void setDate(String date) {
         this.date = date;
     }
@@ -73,16 +120,70 @@ public class StockData {
         this.volume = volume;
     }
 
+    // Getters for new global quote/trending stock data
+    public String getSymbol() {
+        return symbol;
+    }
+
+    public String getPrice() {
+        return price;
+    }
+
+    public String getChange() {
+        return change;
+    }
+
+    public String getChangePercent() {
+        return changePercent;
+    }
+
+    // Setters for new global quote/trending stock data
+    public void setSymbol(String symbol) {
+        this.symbol = symbol;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
+    }
+
+    public void setChange(String change) {
+        this.change = change;
+    }
+
+    public void setChangePercent(String changePercent) {
+        this.changePercent = changePercent;
+    }
+
+    // Getter for the new property
+    public boolean isNegative() {
+
+        return negative;
+    }
+
+    // Optionally, you can also add a setter if needed:
+    public void setNegative(boolean negative) {
+        this.negative = negative;
+    }
+
+    public String getPriceChange() {
+        return this.change;
+    }
+
     @Override
     public String toString() {
         return "StockData{" +
-                "date='" + date + '\'' +
-                ", open=" + open +
-                ", high=" + high +
-                ", low=" + low +
-                ", close=" + close +
-                ", volume=" + volume +
+                "symbol='" + symbol + '\'' +
+                ", date='" + date + '\'' +
+                ", open='" + open + '\'' +
+                ", high='" + high + '\'' +
+                ", low='" + low + '\'' +
+                ", close='" + close + '\'' +
+                ", price='" + price + '\'' +
+                ", volume='" + volume + '\'' +
+                ", change='" + change + '\'' +
+                ", changePercent='" + changePercent + '\'' +
                 '}';
     }
-}
 
+
+}

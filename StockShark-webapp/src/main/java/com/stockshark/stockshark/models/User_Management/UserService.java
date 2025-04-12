@@ -1,79 +1,130 @@
 package com.stockshark.stockshark.models.User_Management;
 
+import com.oracle.wls.shaded.java_cup.runtime.Symbol;
+import com.stockshark.stockshark.models.CompoundCoomponents.Data_Handling_Component;
+import com.stockshark.stockshark.models.CompoundCoomponents.Notification_Component;
+import com.stockshark.stockshark.models.CompoundCoomponents.Stock_Analysis_Component;
+import com.stockshark.stockshark.models.Data_Handling.Database;
+import com.stockshark.stockshark.models.Data_Handling.StockData;
+import org.json.JSONObject;
+
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class UserService implements iUserSession, iPortfolio{
+public class UserService implements iUserSession, iPortfolio {
 
     private String userID;
-
-    //required login interface
-    private LoginService Login;
+    private LoginService login;
     private Map<String, List<String>> stockPortfolio;
+    private Stock_Analysis_Component stockAnalysis;
     private boolean isSessionOpen = false;
 
+    public UserService(String userid) {
+        this.userID = userid;
+    }
 
-    // constructor to initialize the required interface
-    public UserService(LoginService login) {
-        this.Login = login;
-        stockPortfolio = new HashMap<String, List<String>>();
+    // Constructor to accept Stock_Analysis_Component
+    public UserService(LoginService login, Stock_Analysis_Component stockAnalysis) {
+        this.login = login;
+        this.stockAnalysis = stockAnalysis;
+        stockPortfolio = new HashMap<>();
         this.userID = "Guest";
     }
 
-
     @Override
-    public Map<String, List<String>> getPortfolio(String portfilioID) {
-        // access the database, get the portfolio items that have the user id
-        // store it to the Map
-        // then return the StockPortfolio Map
+    public Map<String, List<String>> getPortfolio(String portfolioID) {
         return this.stockPortfolio;
     }
 
     @Override
-    public void updatePortfolio(int userId, Portfolio portfolio) {
-        // access the database,
-        // Write an insert SQL statement to add the new values to the table
+    public Boolean updatePortfolio(String email, String symbolA, String symbolB) {
+        UserService userService = new UserService(email);
+        Portfolio portfolio = new Portfolio(userService);
+        return portfolio.updatePortfolio(symbolA,symbolB,email,getDataHandlingComponentPort());
 
-
+        // in progress
     }
 
     @Override
-    public void removePortfolio(int userId, Portfolio portfolio) {
-        // access the database,
-        // Write an remove SQL statement to add the new values to the table
+    public Boolean removePortfolio(String user, Portfolio portfolio) {
+        return true;
+        // In progress
     }
 
     @Override
     public void startSession(List<String> stockSymbols) {
         this.isSessionOpen = true;
-        //This should use the required COMPOUND COMPONENT stock analysis
-
     }
 
     @Override
     public void endSession() {
         this.isSessionOpen = false;
-
     }
 
     @Override
     public boolean isSessionActive(boolean session) {
-        if (session) {
-            return true;
-        }
-        else{
-            return false;
-        }
+        return session;
     }
 
-    public String Login(String email, String password) {
-       String user = Login.loginUser(email, password);
-        return this.userID = user;
+    public Boolean Login(String email, String password) {
+
+        Data_Handling_Component data_handling_component = getDataHandlingComponentPort();
+
+        return login.loginUser(email, password, data_handling_component);
+
     }
 
-    public String logoutUser() {
-        String userID = Login.logoutUser();
-        return this.userID = userID;
+    public Boolean logoutUser(String email) {
+
+        Data_Handling_Component data_handling_component = getDataHandlingComponentPort();
+        return login.logoutUser(email, data_handling_component);
+    }
+
+    public JSONObject LookupTrendingMarkets(String symbol) throws IOException, InterruptedException {
+        // Delegate to stockAnalysis to look up trending data
+        return stockAnalysis.DisplayTrendingStocks(symbol);
+    }
+
+    public StockData formatGlobalQuoteData(JSONObject rawData){
+        return stockAnalysis.formatGlobalQuoteData(rawData);
+    }
+
+    public List<Portfolio> getPortfolioDetails(String userId){
+        UserService userService = new UserService(userId);
+        Portfolio portfolio = new Portfolio(userService);
+
+        return portfolio.getPortfolioDetails(userId, getDataHandlingComponentPort());
+    }
+
+    public boolean registerUser(String username, String email, String password) {
+        return login.registerUser(username, email, password, getDataHandlingComponentPort());
+    }
+
+    public Portfolio getPortfolioById(int portfolioId){
+        UserService userService = new UserService(null);
+        Portfolio portfolio = new Portfolio(userService);
+
+        return portfolio.getPortfolioById(portfolioId, getDataHandlingComponentPort());
+    }
+
+    public Data_Handling_Component getexternalDB(){
+        return getDataHandlingComponentPort();
+    }
+
+
+    public Data_Handling_Component getDataHandlingComponentPort(){
+        return new Data_Handling_Component();
+    }
+
+
+    public Notification_Component Notification_ComponentPort(){
+        return new Notification_Component();
+    }
+
+
+    public String getEmail() {
+        return userID;
     }
 }

@@ -1,0 +1,200 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Container to hold the logo and navigation together */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Pushes logo to the left and nav to the right */
+    align-items: center;
+    padding: 25px 40px; /* Adjust as needed */
+    background-color: #333; /* Example background color for the header */
+}
+
+/* Logo styling on the left */
+.logo h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 2rem; /* Adjust font-size as needed */
+}
+
+/* Navigation styling on the right */
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Display list items in a row */
+}
+
+.main-nav ul li {
+    margin-left: 20px; /* Space between items */
+}
+
+.main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem; /* Adjust as needed */
+    transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+    min-height: 80vh;
+    background: url('../images/StockSharkBG.png') no-repeat center center/cover;
+
+}
+
+/* Landing Section */
+.landing-banner {
+    padding: 4rem;
+    color: #fff;
+    text-align: center;
+}
+.landing-banner h2 {
+    font-size: 2.5rem;
+}
+.landing-banner p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+/* Forms */
+.form-group {
+    margin-bottom: 1rem;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+.form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button[type="submit"] {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 0.8rem;
+    text-align: left;
+}
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Positive / Negative Classes */
+.positive {
+    color: green;
+}
+.negative {
+    color: red;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 2rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Back Button */
+.back-button {
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #333;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+}
+.back-button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.profile-section {
+    background-color: #fff;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.profile-details p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+.profile-actions a {
+    display: inline-block;
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+.profile-actions a:hover {
+    background-color: #555;
+}
+
+.continue-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #00aa76;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.continue-button:hover {
+    background-color: #007654;
+}
+
+

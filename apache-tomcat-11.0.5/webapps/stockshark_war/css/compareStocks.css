@@ -1,0 +1,127 @@
+/* compareStocks.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* black background */
+    color: #fff;            /* white text */
+}
+
+/* Top row with heading on the left, portfolio button on the right */
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.top-row h2 {
+    margin: 0;
+}
+
+/* Form that holds "Add to Portfolio" at the top right */
+.portfolio-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #00aa76;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.portfolio-form button:hover:enabled {
+    background-color: #007654;
+}
+.portfolio-form button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Main section for the compare form and chart */
+.compare-section {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: rgba(46, 46, 46, 0.3);
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(255,255,255,0.2);
+}
+
+/* Alerts for errors or success */
+.alert {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+.alert.success {
+    background-color: #28a745;
+    color: #fff;
+}
+.alert.error {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* The main form for comparing */
+.compare-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* One horizontal row for inputs, checkboxes, and compare button */
+.form-row {
+    display: flex;
+    flex-wrap: wrap;  /* wrap if the screen is narrow */
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Each label & input in a column */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Transparent-ish inputs */
+.form-group input[type="text"],
+.form-group input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.checkbox-group {
+    display: inline-flex;
+    gap: 1rem;
+    font-weight: bold;
+}
+
+.button-group {
+    display: flex;
+}
+
+.button-group button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #00aa76;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.button-group button:hover {
+    background-color: #007654;
+}
+
+/* Chart container for the canvas */
+.chart-container {
+    position: relative;
+    height: 500px;
+    margin-top: 30px;
+}

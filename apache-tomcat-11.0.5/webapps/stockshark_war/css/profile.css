@@ -1,0 +1,136 @@
+/* profile.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.profile-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.profile-card {
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px;
+    padding: 2rem;
+}
+
+.personal-info {
+    max-width: 350px;
+    text-align: center;
+}
+.personal-info .profile-photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+.user-fullname {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+.user-email {
+    margin: 0.5rem 0 1rem;
+    font-size: 1rem;
+    color: #555;
+}
+.update-link {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 0.5rem;
+}
+.update-link:hover {
+    text-decoration: underline;
+}
+
+.user-details {
+    max-width: 600px;
+}
+.user-details h3 {
+    margin-top: 0;
+}
+.user-details p {
+    margin: 0.5rem 0;
+    line-height: 1.4;
+    color: #444;
+}
+
+/* Account Settings Section */
+.account-settings {
+    max-width: 1200px;
+    margin: 1rem auto 2rem;
+    padding: 0 1rem;
+}
+.settings-card {
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+.settings-card h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* Update / Delete Forms */
+.update-form,
+.delete-form {
+    margin-bottom: 2rem;
+}
+.update-form h4,
+.delete-form h4 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+}
+.update-form label,
+.delete-form label {
+    display: block;
+    margin-bottom: 0.3rem;
+}
+.update-form input[type="email"],
+.update-form input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.update-form button,
+.delete-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.update-form button:hover,
+.delete-form button:hover {
+    background-color: #555;
+}
+
+/* Delete Account Button Variation */
+.delete-form .delete-button {
+    background-color: #dc3545;  /* red */
+}
+.delete-form .delete-button:hover {
+    background-color: #c82333;
+}
+.delete-form p {
+    margin-bottom: 1rem;
+    color: #a00;
+}

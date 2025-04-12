@@ -44,5 +44,26 @@ public class externalAPI {
 
         return jsonResponse;
     }
+
+    public JSONObject getTrendingMarketData(String symbol) throws IOException, InterruptedException {
+        // Construct the URL based on the Alpha Vantage parameter details
+        String url = "https://www.alphavantage.co/query?" +
+                "function=GLOBAL_QUOTE&symbol=" + symbol +
+                "&apikey=" + API_KEY;
+
+        HttpRequest request = HttpRequest.newBuilder()
+                .uri(URI.create(url))
+                .build();
+
+        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+        //System.out.println(response.body());
+
+
+        JSONObject jsonResponse = new JSONObject(response.body());
+
+
+
+        return jsonResponse;
+    }
 }
 

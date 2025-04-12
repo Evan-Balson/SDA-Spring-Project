@@ -43,4 +43,31 @@ public class DataAggregator implements iStockData {
         // Return the list of StockData objects
         return stockDataList;
     }
+
+    public StockData formatGlobalQuoteData(JSONObject rawData){
+
+        JSONObject globalQuote = rawData.getJSONObject("Global Quote");
+        String symbol = globalQuote.getString("01. symbol");
+        String price = globalQuote.getString("05. price");
+        String change = globalQuote.getString("09. change");
+        String changePercent = globalQuote.getString("10. change percent");
+
+        // Create and return a new StockData object using the global quote constructor.
+        return new StockData(symbol, price, change, changePercent);
+    }
+
+    public StockData formatGlobalQuoteData(String rawData) {
+        // Parse the raw JSON string into a JSONObject
+        JSONObject jsonObject = new JSONObject(rawData);
+        JSONObject globalQuote = jsonObject.getJSONObject("Global Quote");
+
+        String symbol = globalQuote.getString("01. symbol");
+        String price = globalQuote.getString("05. price");
+        String change = globalQuote.getString("09. change");
+        String changePercent = globalQuote.getString("10. change percent");
+
+        // Create and return a new StockData object using the global quote constructor.
+        return new StockData(symbol, price, change, changePercent);
+    }
+
 }
