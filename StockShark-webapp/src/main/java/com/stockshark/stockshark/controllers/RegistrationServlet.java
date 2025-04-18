@@ -13,12 +13,16 @@ import java.io.IOException;
 @WebServlet("/Registration")
 public class RegistrationServlet extends HttpServlet {
 
-    private User_Management_Compound user_management; // assuming LoginService has a registerUser method
+    private UserService userService;
+
+    private User_Management_Compound user_management;
 
     @Override
     public void init() throws ServletException {
-        // Initialize your user model / service
-        user_management = new User_Management_Compound();
+        this.userService = new UserService();
+
+       this.user_management = userService.user_management_compoundPort();
+
     }
 
     // Handle GET request to display the registration form

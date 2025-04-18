@@ -5,6 +5,7 @@ import com.stockshark.stockshark.models.Data_Handling.DataAggregator;
 import com.stockshark.stockshark.models.Data_Handling.StockData;
 import com.stockshark.stockshark.models.CompoundCoomponents.User_Management_Compound;
 import com.stockshark.stockshark.models.Data_Handling.externalAPI;
+import com.stockshark.stockshark.models.User_Management.UserService;
 
 import java.sql.*;
 import java.util.*;
@@ -13,11 +14,16 @@ public class StockDataService {
     private User_Management_Compound userManagementCompound;
     private externalAPI api;
     private DataAggregator aggregator;
+    private UserService userService;
+
 
     public StockDataService() {
         this.api = new externalAPI();
         this.aggregator = new DataAggregator();
 
+        userService = new UserService();
+
+        userManagementCompound = userService.user_management_compoundPort();
         this.userManagementCompound = new User_Management_Compound();
     }
 

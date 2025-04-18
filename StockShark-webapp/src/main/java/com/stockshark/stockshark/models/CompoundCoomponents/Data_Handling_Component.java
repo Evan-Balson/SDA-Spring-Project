@@ -76,5 +76,9 @@ public class Data_Handling_Component {
 
         return databaseClient.getPortfolioById(portfolioId);
     }
+
+    public StockData getStockDataObject(){
+        return new StockData();
+    }
 }
 

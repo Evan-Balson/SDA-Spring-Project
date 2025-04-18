@@ -1,6 +1,7 @@
 package com.stockshark.stockshark.controllers;
 
 import com.stockshark.stockshark.models.CompoundCoomponents.User_Management_Compound;
+import com.stockshark.stockshark.models.User_Management.UserService;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -13,12 +14,16 @@ import java.io.IOException;
 @WebServlet("/Logout")
 public class LogoutServlet extends HttpServlet {
 
-    User_Management_Compound user_management;
+    private UserService userService;
+
+    private User_Management_Compound user_management;
+
 
     @Override
     public void init() throws ServletException {
 
-        user_management = new User_Management_Compound();
+        this.userService = new UserService();
+        this.user_management = userService.user_management_compoundPort();
     }
 
     @Override

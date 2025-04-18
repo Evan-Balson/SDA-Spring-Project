@@ -17,12 +17,17 @@ import java.util.List;
 @WebServlet("/Portfolio")
 public class PortfolioServlet extends HttpServlet {
 
+    private UserService userService;
+
     private User_Management_Compound user_management;
 
     @Override
     public void init() throws ServletException {
 
-        user_management = new User_Management_Compound();
+        this.userService = new UserService();
+
+        this.user_management = userService.user_management_compoundPort();
+
     }
 
     @Override

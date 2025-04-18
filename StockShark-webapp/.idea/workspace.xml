@@ -10,7 +10,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a73050a3-a740-41b7-a347-12fac83c1513" name="Changes" comment="" />
+    <list default="true" id="a73050a3-a740-41b7-a347-12fac83c1513" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stockshark/stockshark/controllers/CompareStocksServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stockshark/stockshark/controllers/CompareStocksServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stockshark/stockshark/controllers/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stockshark/stockshark/controllers/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stockshark/stockshark/controllers/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stockshark/stockshark/controllers/LogoutServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stockshark/stockshark/controllers/PortfolioServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stockshark/stockshark/controllers/PortfolioServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stockshark/stockshark/controllers/ProfileServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stockshark/stockshark/controllers/ProfileServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stockshark/stockshark/controllers/RegistrationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stockshark/stockshark/controllers/RegistrationServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stockshark/stockshark/controllers/StockDataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stockshark/stockshark/controllers/StockDataService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stockshark/stockshark/models/CompoundCoomponents/Data_Handling_Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stockshark/stockshark/models/CompoundCoomponents/Data_Handling_Component.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stockshark/stockshark/models/Data_Handling/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stockshark/stockshark/models/Data_Handling/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stockshark/stockshark/models/Data_Handling/StockData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stockshark/stockshark/models/Data_Handling/StockData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stockshark/stockshark/models/Data_Handling/externalAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stockshark/stockshark/models/Data_Handling/externalAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stockshark/stockshark/models/Data_Handling/iData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stockshark/stockshark/models/Data_Handling/iData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stockshark/stockshark/models/Notification/NotificationSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stockshark/stockshark/models/Notification/NotificationSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stockshark/stockshark/models/Stock_Analysis/StockComparisonDashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stockshark/stockshark/models/Stock_Analysis/StockComparisonDashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stockshark/stockshark/models/User_Management/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stockshark/stockshark/models/User_Management/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/stockshark-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/stockshark-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-11.0.5/webapps/stockshark_war/WEB-INF/classes/com/stockshark/stockshark/controllers/CompareStocksServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../apache-tomcat-11.0.5/webapps/stockshark_war/WEB-INF/classes/com/stockshark/stockshark/controllers/CompareStocksServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-11.0.5/webapps/stockshark_war/WEB-INF/classes/com/stockshark/stockshark/controllers/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../apache-tomcat-11.0.5/webapps/stockshark_war/WEB-INF/classes/com/stockshark/stockshark/controllers/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-11.0.5/webapps/stockshark_war/WEB-INF/classes/com/stockshark/stockshark/controllers/LogoutServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../apache-tomcat-11.0.5/webapps/stockshark_war/WEB-INF/classes/com/stockshark/stockshark/controllers/LogoutServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-11.0.5/webapps/stockshark_war/WEB-INF/classes/com/stockshark/stockshark/controllers/PortfolioServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../apache-tomcat-11.0.5/webapps/stockshark_war/WEB-INF/classes/com/stockshark/stockshark/controllers/PortfolioServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-11.0.5/webapps/stockshark_war/WEB-INF/classes/com/stockshark/stockshark/controllers/RegistrationServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../apache-tomcat-11.0.5/webapps/stockshark_war/WEB-INF/classes/com/stockshark/stockshark/controllers/RegistrationServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-11.0.5/webapps/stockshark_war/WEB-INF/classes/com/stockshark/stockshark/controllers/StockDataService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../apache-tomcat-11.0.5/webapps/stockshark_war/WEB-INF/classes/com/stockshark/stockshark/controllers/StockDataService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-11.0.5/webapps/stockshark_war/WEB-INF/classes/com/stockshark/stockshark/models/CompoundCoomponents/Stock_Analysis_Component.class" beforeDir="false" afterPath="$PROJECT_DIR$/../apache-tomcat-11.0.5/webapps/stockshark_war/WEB-INF/classes/com/stockshark/stockshark/models/CompoundCoomponents/Stock_Analysis_Component.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-11.0.5/webapps/stockshark_war/WEB-INF/classes/com/stockshark/stockshark/models/Data_Handling/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/../apache-tomcat-11.0.5/webapps/stockshark_war/WEB-INF/classes/com/stockshark/stockshark/models/Data_Handling/Database.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-11.0.5/webapps/stockshark_war/WEB-INF/classes/com/stockshark/stockshark/models/Notification/NotificationSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/../apache-tomcat-11.0.5/webapps/stockshark_war/WEB-INF/classes/com/stockshark/stockshark/models/Notification/NotificationSystem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-11.0.5/webapps/stockshark_war/WEB-INF/classes/com/stockshark/stockshark/models/Stock_Analysis/StockComparisonDashboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/../apache-tomcat-11.0.5/webapps/stockshark_war/WEB-INF/classes/com/stockshark/stockshark/models/Stock_Analysis/StockComparisonDashboard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-11.0.5/webapps/stockshark_war/WEB-INF/classes/com/stockshark/stockshark/models/User_Management/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../apache-tomcat-11.0.5/webapps/stockshark_war/WEB-INF/classes/com/stockshark/stockshark/models/User_Management/UserService.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -205,10 +234,22 @@
       <workItem from="1744173781135" duration="17917000" />
       <workItem from="1744224190360" duration="715000" />
       <workItem from="1744450334124" duration="37717000" />
+      <workItem from="1744929380579" duration="9590000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

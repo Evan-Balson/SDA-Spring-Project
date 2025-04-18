@@ -22,7 +22,10 @@ import java.util.*;
 @WebServlet("/CompareStocks")
 public class CompareStocksServlet extends HttpServlet {
 
-    private User_Management_Compound user_management = new User_Management_Compound();
+    private UserService userService = new UserService();
+
+    private User_Management_Compound user_management = userService.user_management_compoundPort();
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

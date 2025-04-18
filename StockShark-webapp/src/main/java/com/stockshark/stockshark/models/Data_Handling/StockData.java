@@ -16,6 +16,7 @@ public class StockData {
     private String changePercent;
     private Boolean negative;
 
+    public StockData() {}
     /**
      * Constructor for historical stock data.
      */

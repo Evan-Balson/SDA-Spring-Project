@@ -4,6 +4,7 @@ import com.oracle.wls.shaded.java_cup.runtime.Symbol;
 import com.stockshark.stockshark.models.CompoundCoomponents.Data_Handling_Component;
 import com.stockshark.stockshark.models.CompoundCoomponents.Notification_Component;
 import com.stockshark.stockshark.models.CompoundCoomponents.Stock_Analysis_Component;
+import com.stockshark.stockshark.models.CompoundCoomponents.User_Management_Compound;
 import com.stockshark.stockshark.models.Data_Handling.Database;
 import com.stockshark.stockshark.models.Data_Handling.StockData;
 import org.json.JSONObject;
@@ -20,6 +21,8 @@ public class UserService implements iUserSession, iPortfolio {
     private Map<String, List<String>> stockPortfolio;
     private Stock_Analysis_Component stockAnalysis;
     private boolean isSessionOpen = false;
+
+    public UserService() {}
 
     public UserService(String userid) {
         this.userID = userid;
@@ -121,6 +124,10 @@ public class UserService implements iUserSession, iPortfolio {
 
     public Notification_Component Notification_ComponentPort(){
         return new Notification_Component();
+    }
+
+    public User_Management_Compound user_management_compoundPort(){
+        return new User_Management_Compound();
     }
 
 

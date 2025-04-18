@@ -30,7 +30,7 @@ public class ProfileServlet extends HttpServlet {
             // TODO: Perform account deletion
         }
 
-        // Optionally set success/error messages, re-load user data, etc.
+
         response.sendRedirect("Profile");
     }
 }

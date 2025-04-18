@@ -13,16 +13,18 @@ import java.util.Date;
 
 // set up function for : https://twelvedata.com/pricing
 
-public class externalAPI {
+public class externalAPI implements iData {
     private static final String API_KEY = "UB7G1TF6XDOR2D07"; // Replace with your actual API key
     private static final HttpClient client = HttpClient.newHttpClient();
 
+    @Override
     public JSONObject getStockData(String symbol) throws IOException, InterruptedException {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         String today = sdf.format(new Date()); // Format today's date
         return getStockDataByDateRange(symbol, today, today);
     }
 
+    @Override
     public JSONObject getStockDataByDateRange(String symbol, String startDate, String endDate) throws IOException, InterruptedException {
 
         // Construct the URL based on the Alpha Vantage parameter details
@@ -45,6 +47,7 @@ public class externalAPI {
         return jsonResponse;
     }
 
+    @Override
     public JSONObject getTrendingMarketData(String symbol) throws IOException, InterruptedException {
         // Construct the URL based on the Alpha Vantage parameter details
         String url = "https://www.alphavantage.co/query?" +

@@ -3,6 +3,7 @@ package com.stockshark.stockshark.models.Notification;
 import com.stockshark.stockshark.models.CompoundCoomponents.Data_Handling_Component;
 import com.stockshark.stockshark.models.CompoundCoomponents.Notification_Component;
 import com.stockshark.stockshark.models.CompoundCoomponents.User_Management_Compound;
+import com.stockshark.stockshark.models.Data_Handling.Database;
 
 import java.util.List;
 
@@ -32,7 +33,8 @@ public class NotificationSystem implements iNotification_Port {
     }
 
     public Data_Handling_Component getDataHandlingComponentPort(){
-        return new Data_Handling_Component();
+        Database database = new Database();
+        return database.getDataHandlingComponentPort();
     }
 
     public Notification_Component Notification_ComponentPort(){

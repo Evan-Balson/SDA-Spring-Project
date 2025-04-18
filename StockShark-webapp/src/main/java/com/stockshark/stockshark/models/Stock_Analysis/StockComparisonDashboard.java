@@ -56,4 +56,5 @@ public class StockComparisonDashboard implements iUser_StockAnalysis_Management_
     public Data_Handling_Component getDataHandlingComponentPort(){
         return new Data_Handling_Component();
     }
+
 }

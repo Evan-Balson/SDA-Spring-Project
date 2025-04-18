@@ -15,13 +15,17 @@ import java.io.IOException;
 public class LoginServlet extends HttpServlet {
 
     //private LoginService loginService;
+    private UserService userService;
+
     private User_Management_Compound user_management;
+
 
     @Override
     public void init() throws ServletException {
-        // Initialize your LoginService (replace with your actual dependency injection or factory method)
-        //loginService = new LoginService();
-        user_management = new User_Management_Compound();
+        this.userService = new UserService();
+
+        this.user_management = userService.user_management_compoundPort();
+
     }
 
     @Override
